@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="register"
+    tools:context="co.fddd.www.moran.fragment.RegisterFragment">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|top"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/username"/>
+
+        <EditText android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/login_input"
+            android:maxLines="1" android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/login_email"/>
+
+        <EditText android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="36dp"
+            android:background="@drawable/login_input"
+            android:inputType="textEmailAddress" android:maxLines="1"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/login_password"/>
+
+        <EditText android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/login_input"
+            android:inputType="textPassword"
+            android:maxLines="1" android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/repeatPassword"/>
+
+        <EditText android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:imeActionId="@+id/register_button"
+            android:background="@drawable/login_input"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified" android:inputType="textPassword"
+            android:maxLines="1" android:singleLine="true" />
+
+        <Button android:id="@+id/register_button" style="?android:textAppearanceSmall"
+            android:layout_width="match_parent" android:layout_height="36dp"
+            android:layout_marginTop="16dp" android:text="@string/title_activity_register"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:id="@+id/to_login"
+            android:text="@string/back_to_login"/>
+    </LinearLayout>
+</ScrollView>
